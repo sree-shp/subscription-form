@@ -1,0 +1,23 @@
+{
+  "name": "subscription-form",
+  "version": "1.0.0",
+  "description": "a multi step subscription form",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sree-shp/subscription-form.git"
+  },
+  "author": "Sreehari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sree-shp/subscription-form/issues"
+  },
+  "homepage": "https://github.com/sree-shp/subscription-form#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
