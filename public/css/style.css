@@ -1,0 +1,128 @@
+body{
+    background: hsl(206, 84%, 93%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h6,h5{
+    margin: 0%;
+    padding: 5% 0%;
+}
+
+h6{
+    color: rgb(204, 204, 204);;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 15%;
+   
+    background-color: white;
+    border-radius: 1.25rem;
+    ;
+}
+
+/* side-pane */
+
+.step-information{
+    background-image: url("../images/bg-sidebar-desktop.svg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+
+    border-radius: 1.25rem;
+    width: 35%;
+    padding: 3% 2% 30%;
+    
+    margin: 1%;
+
+    color: white
+}
+
+.step-number-circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    /* text-align: center; */
+}
+
+.step-number{
+    position: relative;
+    left: 0.75rem;
+    bottom: 0.55rem;
+}
+
+.step-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7% 0%;
+}
+
+.step{
+    padding-left: 10%;
+}
+
+.current-step{
+    background-color: hsl(206, 94%, 87%);
+    border: 1px solid hsl(206, 94%, 87%);
+    color:black;
+}
+
+/* right-pane */
+
+.step-details{
+    padding: 1.5% 10% ;
+    width: 75%;
+}
+
+.step1-form{
+    padding:0% 0% 10%;
+    margin-top: 10%;
+}
+
+input{
+    font-size: 1.15rem;
+    border: 1px solid grey;
+    width:96.5%;
+    border-radius: 0.25rem;
+    margin:3% 0%;
+    padding: 3% 0% 3% 3%;
+}
+
+
+
+.next-step{
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    background: hsl(213, 96%, 18%);
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    border: 0px;
+    
+}
+
+.align-right{
+    text-align: right;
+    position: relative;
+    top: 4rem;
+}
+
+label{
+    color:hsl(213, 96%, 18%);
+    font-size: 1.15rem;
+}
+
+.step-heading{
+    font-size: 3rem;
+    color:hsl(213, 96%, 18%);
+    margin-bottom: 0%;
+}
+.step-description{
+    color: rgb(138, 138, 138);
+    font-size: 1.155rem;
+}

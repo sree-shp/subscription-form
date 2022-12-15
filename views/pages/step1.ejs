@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subcription form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <%- include("../partials/header") -%>
+
+      <div class="step-details">
+        <h1 class="step-heading">Personal info</h1>
+        <p class="step-description">
+          Please provide your name, email address, and phone number
+        </p>
+        <div class="step1-form">
+          <form action="/" method="post">
+            <label>Name</label>
+            <br />
+            <input
+              type="text"
+              name="customer-name"
+              placeholder="e.g. your name"
+            />
+            <br />
+            <label>Email Address</label><br />
+            <input
+              type="text"
+              name="customer-email"
+              placeholder="e.g. yourname@gmail.com"
+            />
+            <br />
+            <label>Phone Number </label><br />
+            <input
+              type="text"
+              name="customer-phone-number"
+              placeholder="e.g. +1 234 567 890"
+            />
+            <br />
+            <div class="align-right">
+              <button type="submit" name="next-step" class="next-step">
+                Next Step
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
