@@ -143,7 +143,7 @@ label{
 }
 
 .plan-button{
-    width: 32%;
+    width: 25%;
     padding: 5% 3%;
     background-color: white;
     border: 2px solid hsl(231, 11%, 63%);
@@ -235,3 +235,6 @@ label{
     
 }
 
+.plan-radio-button{
+    display: none;
+}

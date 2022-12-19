@@ -13,49 +13,79 @@
           You have the option of monthly or yearly billing.
         </p>
         <div class="step-form">
-            <form action="/step2" method="post">
-        <div class="plan-container">
-           
-          <button type="button" class="plan-button">
-            <img src="images\icon-arcade.svg" alt="">
-            <p class="plan-heading">Arcade</p>
-            <p class="plan-description" id="arcade">$9/mo</p>
-          </button>
-       
-          <button type="button" class="plan-button">
-            <img src="images\icon-advanced.svg" alt="">
-            <p class="plan-heading">Advanced</p>
-            <p class="plan-description" id="advanced">$12/mo</p>
-            </button>
-        
-          <button type="button" class="plan-button"> 
-            <img src="images\icon-pro.svg" alt="">
-            <p class="plan-heading">Pro</p>
-            <p class="plan-description" id="pro">$15/mo</p>
-        </button>
+          <form action="/step2" method="post">
+            <div class="plan-container">
+              <label for="plan-option1" class="plan-button plan-selected">
+                <input
+                  type="radio"
+                  name="plan"
+                  id="plan-option1"
+                  class="plan-radio-button"
+                  value="arcade"
+                  required
+                  checked
+                />
+                <img src="images\icon-arcade.svg" alt="" />
+                <p class="plan-heading">Arcade</p>
+                <p class="plan-description" id="arcade">$9/mo</p>
+              </label>
 
-        </div>
-          <div class="plan-toggler">
-            <label for="">Monthly</label>
-            <label class="toggle" for="plan-toggle">
-                
-                <input type="checkbox" class="toggle-input" id="plan-toggle">
+              <label for="plan-option2" class="plan-button">
+                <input
+                  type="radio"
+                  name="plan"
+                  id="plan-option2"
+                  class="plan-radio-button"
+                  value="advanced"
+                  required
+                />
+                <img src="images\icon-advanced.svg" alt="" />
+                <p class="plan-heading">Advanced</p>
+                <p class="plan-description" id="advanced">$12/mo</p>
+              </label>
+
+              <label class="plan-button" for="plan-option3">
+                <input
+                  type="radio"
+                  name="plan"
+                  id="plan-option3"
+                  class="plan-radio-button"
+                  value="pro"
+                  required
+                />
+                <img src="images\icon-pro.svg" alt="" />
+                <p class="plan-heading">Pro</p>
+                <p class="plan-description" id="pro">$15/mo</p>
+              </label>
+            </div>
+            <div class="plan-toggler">
+              <label for="">Monthly</label>
+              <label class="toggle" for="plan-toggle">
+                <input
+                  type="checkbox"
+                  class="toggle-input"
+                  name="plantype"
+                  id="plan-toggle"
+                  value="yearly"
+                />
                 <div class="toggle-fill"></div>
-                
-            </label>
-            <label for="">Yearly</label>
-          </div>
-            <button type="submit" name="go-back" class="go-back" formaction="/" formmethod="get">Go back</button>
-          
-          
-            <button type="submit" name="next-step" class="next-step">
-              Next Step
+              </label>
+              <label for="">Yearly</label>
+            </div>
+            <button
+              type="submit"
+              name="goback"
+              class="go-back"
+              formaction="/"
+              formmethod="get"
+            >
+              Go back
             </button>
-        </form>
+
+            <button type="submit" class="next-step">Next Step</button>
+          </form>
         </div>
-      
-      
-      
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="javascript/step2.js"></script>
