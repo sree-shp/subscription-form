@@ -1,1 +1,63 @@
-<%- include("header.ejs") -%> <%- include("footer.ejs") -%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head") -%>
+  </head>
+  <body>
+    <div class="container">
+      <%- include("../partials/side-pane") -%>
+
+      <div class="step-details">
+        <h1 class="step-heading">Select your plan</h1>
+        <p class="step-description">
+          You have the option of monthly or yearly billing.
+        </p>
+        <div class="step-form">
+            <form action="/step2" method="post">
+        <div class="plan-container">
+           
+          <button type="button" class="plan-button">
+            <img src="images\icon-arcade.svg" alt="">
+            <p class="plan-heading">Arcade</p>
+            <p class="plan-description" id="arcade">$9/mo</p>
+          </button>
+       
+          <button type="button" class="plan-button">
+            <img src="images\icon-advanced.svg" alt="">
+            <p class="plan-heading">Advanced</p>
+            <p class="plan-description" id="advanced">$12/mo</p>
+            </button>
+        
+          <button type="button" class="plan-button"> 
+            <img src="images\icon-pro.svg" alt="">
+            <p class="plan-heading">Pro</p>
+            <p class="plan-description" id="pro">$15/mo</p>
+        </button>
+
+        </div>
+          <div class="plan-toggler">
+            <label for="">Monthly</label>
+            <label class="toggle" for="plan-toggle">
+                
+                <input type="checkbox" class="toggle-input" id="plan-toggle">
+                <div class="toggle-fill"></div>
+                
+            </label>
+            <label for="">Yearly</label>
+          </div>
+            <button type="submit" name="go-back" class="go-back" formaction="/" formmethod="get">Go back</button>
+          
+          
+            <button type="submit" name="next-step" class="next-step">
+              Next Step
+            </button>
+        </form>
+        </div>
+      
+      
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="javascript/step2.js"></script>
+  </body>
+</html>

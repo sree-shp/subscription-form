@@ -9,17 +9,22 @@ h6,h5{
 }
 
 h6{
-    color: rgb(204, 204, 204);;
+    color: rgb(204, 204, 204);
+    font-size: 0.75rem;
+}
+
+h5{
+    font-size: 1rem;
 }
 
 .container{
     display: flex;
     flex-direction: row;
     margin: 5% 15%;
-   
+    
     background-color: white;
     border-radius: 1.25rem;
-    ;
+    
 }
 
 /* side-pane */
@@ -77,18 +82,20 @@ h6{
     width: 75%;
 }
 
-.step1-form{
+.step-form{
     padding:0% 0% 10%;
     margin-top: 10%;
+    position: relative;
+    height: 60%;
 }
 
 input{
     font-size: 1.15rem;
     border: 1px solid grey;
-    width:96.5%;
+    width:97%;
     border-radius: 0.25rem;
-    margin:3% 0%;
-    padding: 3% 0% 3% 3%;
+    margin:1% 0% 6%;
+    padding: 2.5% 0% 2.5% 2.5%;
 }
 
 
@@ -103,14 +110,13 @@ input{
     padding: 10px 40px 10px 40px;
     text-decoration: none;
     border: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     
 }
 
-.align-right{
-    text-align: right;
-    position: relative;
-    top: 4rem;
-}
+
 
 label{
     color:hsl(213, 96%, 18%);
@@ -126,3 +132,106 @@ label{
     color: rgb(138, 138, 138);
     font-size: 1.155rem;
 }
+
+/* step-2 */
+
+.plan-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6% 0%;
+}
+
+.plan-button{
+    width: 32%;
+    padding: 5% 3%;
+    background-color: white;
+    border: 2px solid hsl(231, 11%, 63%);
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.plan-button:hover{
+    background-color:  hsl(217, 100%, 97%) ;
+}
+
+.plan-selected{
+    background-color:  hsl(217, 100%, 97%)
+}
+
+.plan-toggler{
+    background-color: hsl(217, 100%, 97%);
+    text-align: center;
+    padding: 3%;
+    border-radius: 0.75rem;
+}
+
+.go-back{
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: hsl(231, 11%, 63%);
+    font-size: 20px;
+    background: white;
+    padding: 10px 40px 10px 0px;
+    text-decoration: none;
+    border: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;  
+    
+}
+
+.plan-heading{
+    color: hsl(213, 96%, 18%);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 30% 0% 0%;
+}
+
+.plan-description{
+    color: rgb(138, 138, 138);
+    font-size: 1rem;
+    margin: 10% 0% 3%;
+}
+
+.toggle{
+    display: inline-block;
+}
+
+.toggle-fill{
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border-radius: 12.5px;
+    background-color:  hsl(213, 96%, 18%);
+    top: 5px;
+    margin: 0px 20px;
+}
+
+.toggle-input{
+    display: none;
+}
+
+.toggle-fill::after{
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 12.5px;
+    transition: transform 0.2s;
+}
+
+.toggle-input:checked ~ .toggle-fill::after{
+    transform: translateX(25px);
+}
+
+.plan-offer{
+    color:  hsl(213, 96%, 18%);
+    font-size: 15px;
+    
+}
+
